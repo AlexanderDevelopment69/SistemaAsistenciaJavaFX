@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proyectoasistencia.MenuController">
+   <children>
+      <Button layoutX="152.0" layoutY="246.0" mnemonicParsing="false" onAction="#irRegistroPersonal" prefHeight="42.0" prefWidth="131.0" text="Registrar personal" />
+      <Button layoutX="315.0" layoutY="246.0" mnemonicParsing="false" onAction="#irRegistrarAsistencia" prefHeight="42.0" prefWidth="131.0" text="Registrar asistencia" />
+      <Label layoutX="137.0" layoutY="176.0" text="Sistema de asistencia de personal">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="103.0" fitWidth="124.0" layoutX="248.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/asistencia.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
