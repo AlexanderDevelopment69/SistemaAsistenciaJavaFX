@@ -80,4 +80,46 @@
             </plugin>
         </plugins>
     </build>
+
+
+    <profiles>
+        <!-- Perfil de ejecución -->
+        <profile>
+            <id>run-profile</id>
+            <build>
+                <plugins>
+                    <!-- Activación del plugin de compilación -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>default-compile</id>
+                                <phase>compile</phase>
+                                <goals>
+                                    <goal>compile</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <!-- Activación del plugin de JavaFX -->
+                    <plugin>
+                        <groupId>org.openjfx</groupId>
+                        <artifactId>javafx-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>default-cli</id>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+
 </project>
